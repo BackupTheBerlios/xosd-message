@@ -1,0 +1,8 @@
+README : xosd_message 0.1
+GPL by Bernd Mueller < ragnar76@googlemail.com >
+22.01.2007
+
+xosd_message is a small tool to display messages on your X11 screen. just
+start it with >> xosd_message "Message you want to display" <<. If you want
+to diplay more than a single word, just put the phrase in quotes as you see
+above. Thats it.  

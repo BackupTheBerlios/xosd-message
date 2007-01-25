@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ -f /usr/bin/xosd-config ]; then
+{
+	echo "Building xosd_message"
+	gcc `xosd-config --cflags --libs` src/xosd_message.c -o xosd_massage
+	echo "Striping nasty Debuginformations"
+	strip --strip-debug xosd_massage
+	echo "Done"
+}
+else
+{
+	echo -e "\nxosd-config not found. Please install the devel package from your distro first.\n" 
+}
+fi;
